@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGΣA Sign Up</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0d1117, #161b22, #0d1117);
+        color: #fff;
+    }
+
+    .signup-container {
+        background: rgba(25, 25, 25, 0.95);
+        padding: 50px 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+        width: 350px;
+        text-align: center;
+    }
+
+    .signup-container h1 {
+        margin-bottom: 30px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 28px;
+        color: #00ffff;
+    }
+
+    .signup-container input {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 10px 0;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: #111;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .signup-container input:focus {
+        box-shadow: 0 0 10px #00ffff;
+        border: 1px solid #00ffff;
+    }
+
+    .signup-container button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        background: linear-gradient(135deg, #00ffff, #00aabb);
+        color: #111;
+        transition: 0.3s;
+    }
+
+    .signup-container button:hover {
+        background: linear-gradient(135deg, #00aabb, #00ffff);
+    }
+
+    .signup-container p {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #aaa;
+    }
+
+    .signup-container p a {
+        color: #00ffff;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h1>SIGΣA Sign Up</h1>
+    <form id="signupForm">
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="#">Login</a></p>
+</div>
+
+<script>
+    const form = document.getElementById('signupForm');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevents actual form submission
+        // Redirect after sign up
+        window.location.href = "https://www.rolex.com/watches";
+    });
+</script>
+
+</body>
+</html>
